@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "name": "John Carter",
+      "email": "john@google.com",
+      "phone": "(414) 907 - 1274",
+      "location": "United States",
+      "company": "Google",
+      "status": "active"
+    },
+    {
+      "name": "Sophie Moore",
+      "email": "sophie@webflow.com",
+      "phone": "(240) 480 - 4277",
+      "location": "United Kingdom",
+      "company": "Webflow",
+      "status": "inactive"
+    },
+    {
+      "name": "Matt Cannon",
+      "email": "matt@facebook.com",
+      "phone": "(318) 698 - 9889",
+      "location": "Australia",
+      "company": "Facebook",
+      "status": "inactive"
+    },
+    {
+      "name": "Graham Hills",
+      "email": "graham@twitter.com",
+      "phone": "(540) 627 - 3890",
+      "location": "India",
+      "company": "Twitter",
+      "status": "active"
+    },
+    {
+      "name": "Sandy Houston",
+      "email": "sandy@youtube.com",
+      "phone": "(440) 410 - 3848",
+      "location": "Canada",
+      "company": "YouTube",
+      "status": "inactive"
+    },
+    {
+      "name": "Andy Smith",
+      "email": "andy@reddit.com",
+      "phone": "(504) 458 - 3268",
+      "location": "United States",
+      "company": "Reddit",
+      "status": "active"
+    },
+    {
+      "name": "Lilly Woods",
+      "email": "lilly@spotify.com",
+      "phone": "(361) 692 - 1819",
+      "location": "Australia",
+      "company": "Spotify",
+      "status": "inactive"
+    },
+    {
+      "name": "Patrick Meyer",
+      "email": "patrick@pinterest.com",
+      "phone": "(760) 582 - 5670",
+      "location": "United Kingdom",
+      "company": "Pinterest",
+      "status": "active"
+    },
+    {
+      "name": "Frances Willen",
+      "email": "frances@twitch.com",
+      "phone": "(216) 496 - 5864",
+      "location": "Canada",
+      "company": "Twitch",
+      "status": "inactive"
+    },
+    {
+      "name": "Ernest Houston",
+      "email": "ernest@linkedin.com",
+      "phone": "(704) 339 - 6813",
+      "location": "India",
+      "company": "LinkedIn",
+      "status": "inactive"
+    }
+  ]
+}

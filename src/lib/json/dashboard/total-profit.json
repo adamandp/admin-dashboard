@@ -1,0 +1,19 @@
+{
+  "label": "Total Profit",
+  "value": 144600,
+  "growthPercentage": 28.5,
+  "data": [
+    { "month": "January", "revenue": 186, "expenses": 80 },
+    { "month": "February", "revenue": 305, "expenses": 200 },
+    { "month": "March", "revenue": 237, "expenses": 120 },
+    { "month": "April", "revenue": 73, "expenses": 190 },
+    { "month": "May", "revenue": 209, "expenses": 130 },
+    { "month": "June", "revenue": 214, "expenses": 140 },
+    { "month": "July", "revenue": 250, "expenses": 160 },
+    { "month": "August", "revenue": 270, "expenses": 180 },
+    { "month": "September", "revenue": 290, "expenses": 200 },
+    { "month": "October", "revenue": 310, "expenses": 220 },
+    { "month": "November", "revenue": 330, "expenses": 240 },
+    { "month": "December", "revenue": 350, "expenses": 260 }
+  ]
+}

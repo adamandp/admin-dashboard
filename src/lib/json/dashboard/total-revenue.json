@@ -1,0 +1,19 @@
+{
+  "label": "Total Revenue",
+  "revenue": 240800,
+  "growthPercentage": 22.6,
+  "data": [
+    { "month": "Jan", "revenue": 15000, "expenses": 10000 },
+    { "month": "Feb", "revenue": 10000, "expenses": 12000 },
+    { "month": "Mar", "revenue": 50000, "expenses": 30000 },
+    { "month": "Apr", "revenue": 75000, "expenses": 50000 },
+    { "month": "May", "revenue": 100000, "expenses": 70000 },
+    { "month": "Jun", "revenue": 125200, "expenses": 85000 },
+    { "month": "Jul", "revenue": 90000, "expenses": 95000 },
+    { "month": "Aug", "revenue": 130000, "expenses": 110000 },
+    { "month": "Sep", "revenue": 160000, "expenses": 140000 },
+    { "month": "Oct", "revenue": 200000, "expenses": 130000 },
+    { "month": "Nov", "revenue": 230000, "expenses": 90000 },
+    { "month": "Dec", "revenue": 250000, "expenses": 120000 }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "category": "Revenue by Customer Type",
+  "totalRevenue": 240800,
+  "growthPercentage": 24.6,
+  "data": [
+    {
+      "month": "Jan",
+      "currentClients": 10000,
+      "subscribers": 8000,
+      "newCustomers": 15000
+    },
+    {
+      "month": "Feb",
+      "currentClients": 12000,
+      "subscribers": 9000,
+      "newCustomers": 18000
+    },
+    {
+      "month": "Mar",
+      "currentClients": 15000,
+      "subscribers": 10000,
+      "newCustomers": 25000
+    },
+    {
+      "month": "Apr",
+      "currentClients": 14000,
+      "subscribers": 9500,
+      "newCustomers": 22000
+    },
+    {
+      "month": "May",
+      "currentClients": 7000,
+      "subscribers": 5000,
+      "newCustomers": 10000
+    },
+    {
+      "month": "Jun",
+      "currentClients": 11000,
+      "subscribers": 7500,
+      "newCustomers": 17000
+    },
+    {
+      "month": "Jul",
+      "currentClients": 5000,
+      "subscribers": 3000,
+      "newCustomers": 7000
+    },
+    {
+      "month": "Aug",
+      "currentClients": 20000,
+      "subscribers": 12000,
+      "newCustomers": 30000
+    },
+    {
+      "month": "Sep",
+      "currentClients": 13000,
+      "subscribers": 8500,
+      "newCustomers": 21000
+    },
+    {
+      "month": "Oct",
+      "currentClients": 14000,
+      "subscribers": 9000,
+      "newCustomers": 19000
+    },
+    {
+      "month": "Nov",
+      "currentClients": 11000,
+      "subscribers": 7500,
+      "newCustomers": 16000
+    },
+    {
+      "month": "Dec",
+      "currentClients": 13000,
+      "subscribers": 9500,
+      "newCustomers": 20000
+    }
+  ]
+}

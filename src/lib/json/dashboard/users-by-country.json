@@ -1,0 +1,112 @@
+{
+  "category": "Users by Country",
+  "totalUsers": 12400,
+  "growthPercentage": 28.5,
+  "data": [
+    {
+      "id": 1,
+      "name": "Jakarta",
+      "percentage": 15,
+      "users": 5000,
+      "coordinates": { "lat": -6.2088, "lng": 106.8456 }
+    },
+    {
+      "id": 2,
+      "name": "Surabaya",
+      "percentage": 12,
+      "users": 4000,
+      "coordinates": { "lat": -7.2504, "lng": 112.7688 }
+    },
+    {
+      "id": 3,
+      "name": "Medan",
+      "percentage": 10,
+      "users": 3000,
+      "coordinates": { "lat": 3.5952, "lng": 98.6722 }
+    },
+    {
+      "id": 4,
+      "name": "Bandung",
+      "percentage": 10,
+      "users": 2800,
+      "coordinates": { "lat": -6.9175, "lng": 107.6191 }
+    },
+    {
+      "id": 5,
+      "name": "Makassar",
+      "percentage": 8,
+      "users": 2400,
+      "coordinates": { "lat": -5.1477, "lng": 119.4175 }
+    },
+    {
+      "id": 6,
+      "name": "Yogyakarta",
+      "percentage": 7,
+      "users": 2000,
+      "coordinates": { "lat": -7.7956, "lng": 110.3695 }
+    },
+    {
+      "id": 7,
+      "name": "Bali (Denpasar)",
+      "percentage": 7,
+      "users": 2200,
+      "coordinates": { "lat": -8.4095, "lng": 115.1889 }
+    },
+    {
+      "id": 8,
+      "name": "Semarang",
+      "percentage": 6,
+      "users": 1900,
+      "coordinates": { "lat": -6.9663, "lng": 110.4164 }
+    },
+    {
+      "id": 9,
+      "name": "Palembang",
+      "percentage": 6,
+      "users": 1800,
+      "coordinates": { "lat": -2.9978, "lng": 104.7754 }
+    },
+    {
+      "id": 10,
+      "name": "Batam",
+      "percentage": 5,
+      "users": 1600,
+      "coordinates": { "lat": 1.0833, "lng": 104.0833 }
+    },
+    {
+      "id": 11,
+      "name": "Tangerang",
+      "percentage": 5,
+      "users": 1500,
+      "coordinates": { "lat": -6.175, "lng": 106.6302 }
+    },
+    {
+      "id": 12,
+      "name": "Balikpapan",
+      "percentage": 4,
+      "users": 1400,
+      "coordinates": { "lat": -1.2654, "lng": 116.9012 }
+    },
+    {
+      "id": 13,
+      "name": "Pontianak",
+      "percentage": 4,
+      "users": 1300,
+      "coordinates": { "lat": -0.026, "lng": 109.3426 }
+    },
+    {
+      "id": 14,
+      "name": "Surakarta (Solo)",
+      "percentage": 4,
+      "users": 1200,
+      "coordinates": { "lat": -7.5585, "lng": 110.8273 }
+    },
+    {
+      "id": 15,
+      "name": "Makasar",
+      "percentage": 3,
+      "users": 1100,
+      "coordinates": { "lat": -5.1477, "lng": 119.4175 }
+    }
+  ]
+}

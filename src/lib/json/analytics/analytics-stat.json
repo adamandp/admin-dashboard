@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "label": "Save Products",
+      "value": 43800,
+      "change": 22.1
+    },
+    {
+      "id": 2,
+      "label": "Stock Products",
+      "value": 17600,
+      "change": -11.1
+    },
+    {
+      "id": 3,
+      "label": "Sale Products",
+      "value": 1280,
+      "change": 7.2
+    },
+    {
+      "id": 4,
+      "label": "Averange Revenue",
+      "value": 9200,
+      "change": 21.1
+    }
+  ]
+}

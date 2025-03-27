@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "name": "Watch",
+      "category": "Accessories",
+      "price": 20,
+      "company": "Google",
+      "status": "In Stock"
+    },
+    {
+      "name": "Mobile",
+      "category": "Telecommunication",
+      "price": 500,
+      "company": "Webflow",
+      "status": "Out of stock"
+    },
+    {
+      "name": "Laptop",
+      "category": "Note Book",
+      "price": 800,
+      "company": "Facebook",
+      "status": "Out of stock"
+    },
+    {
+      "name": "TV",
+      "category": "Digital",
+      "price": 250,
+      "company": "Twitter",
+      "status": "In Stock"
+    },
+    {
+      "name": "Camera",
+      "category": "Digital",
+      "price": 100,
+      "company": "YouTube",
+      "status": "Out of stock"
+    },
+    {
+      "name": "Perfume",
+      "category": "Cosmetics",
+      "price": 25,
+      "company": "Reddit",
+      "status": "In Stock"
+    },
+    {
+      "name": "Ear pods",
+      "category": "Digital",
+      "price": 45,
+      "company": "Spotify",
+      "status": "Out of stock"
+    },
+    {
+      "name": "Wireless Charger",
+      "category": "Digital",
+      "price": 10,
+      "company": "Pinterest",
+      "status": "In Stock"
+    },
+    {
+      "name": "Torch",
+      "category": "Light",
+      "price": 20,
+      "company": "Twitch",
+      "status": "Out of stock"
+    },
+    {
+      "name": "Access Point",
+      "category": "Network",
+      "price": 15,
+      "company": "LinkedIn",
+      "status": "Out of stock"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "label": "Users by device",
+  "totalUsers": 23648,
+  "data": [
+    { "month": "January", "desktop": 15624, "phoneApp": 5546, "laptop": 2478 }
+  ]
+}

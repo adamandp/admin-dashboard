@@ -1,0 +1,20 @@
+{
+  "data": [
+    {
+      "label": "Total Users",
+      "value": 250
+    },
+    {
+      "label": "New Users",
+      "value": 15
+    },
+    {
+      "label": "Top Users",
+      "value": 200
+    },
+    {
+      "label": "Other Users",
+      "value": 35
+    }
+  ]
+}

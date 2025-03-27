@@ -1,0 +1,19 @@
+{
+  "label": "Total Sessions",
+  "value": 400,
+  "growthPercentage": 16.8,
+  "data": [
+    { "month": "January", "revenue": 186 },
+    { "month": "February", "revenue": 305 },
+    { "month": "March", "revenue": 237 },
+    { "month": "April", "revenue": 73 },
+    { "month": "May", "revenue": 209 },
+    { "month": "June", "revenue": 214 },
+    { "month": "July", "revenue": 250 },
+    { "month": "August", "revenue": 270 },
+    { "month": "September", "revenue": 290 },
+    { "month": "October", "revenue": 310 },
+    { "month": "November", "revenue": 330 },
+    { "month": "December", "revenue": 350 }
+  ]
+}

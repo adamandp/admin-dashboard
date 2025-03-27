@@ -1,16 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import { archivoblack, bali, dmsans, monasans } from "@/lib/font";
+import "@/styles/globals.css";
+import "@/styles/shadcn.css";
+import "@/styles/basic.css";
+import QueryProvider from "@/utils/queryProvider";
+import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,11 +17,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${monasans.variable} ${dmsans.variable} ${archivoblack.variable} ${bali.variable} bg-[#081028] antialiased`}
       >
-        {children}
+        <QueryProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <main className="max-w-[1440px] mx-auto">
+              <div className="px-c-11 py-c-9">{children}</div>
+            </main>
+          </ThemeProvider>
+        </QueryProvider>
       </body>
     </html>
   );

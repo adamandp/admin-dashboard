@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "label": "Pageviews",
+      "value": 50800,
+      "change": 28.4
+    },
+    {
+      "id": 2,
+      "label": "Monthly Users",
+      "value": 23600,
+      "change": -12.6
+    },
+    {
+      "id": 3,
+      "label": "New Sign Ups",
+      "value": 756,
+      "change": 3.1
+    },
+    {
+      "id": 4,
+      "label": "Subscriptions",
+      "value": 2300,
+      "change": 11.3
+    }
+  ]
+}

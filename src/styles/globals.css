@@ -1,0 +1,267 @@
+@import "tailwindcss";
+
+@theme reference {
+  --color-neutral-colors-800: #081028;
+  --color-neutral-colors-700: #0a1330;
+  --color-neutral-colors-600: #0b1739;
+  --color-neutral-colors-500: #7e89ac;
+  --color-neutral-colors-400: #aeb9e1;
+  --color-neutral-colors-300: #d1dbf9;
+  --color-neutral-colors-200: #d9e1fa;
+  --color-neutral-colors-100: #fff;
+  --color-primarys-colors-color-1: #cb3cff;
+  --color-secondary-colors-color-1: #0b1739;
+  --color-secondary-colors-color-2: #9a91fb;
+  --color-secondary-colors-color-3: #00c2ff;
+  --color-secondary-colors-color-4: #343b4f;
+  --color-secondary-colors-color-5: #fdb52a;
+  --color-system-colors-blue-400: #086cd9;
+  --color-system-colors-blue-300: #1d88fe;
+  --color-system-colors-blue-200: #8fc3ff;
+  --color-system-colors-blue-100: #eaf4ff;
+  --color-system-colors-green-400: #11845b;
+  --color-system-colors-green-300: #05c168;
+  --color-system-colors-green-200: #7fdca4;
+  --color-system-colors-green-100: #def2e6;
+  --color-system-colors-red-400: #dc2b2b;
+  --color-system-colors-red-300: #ff5a65;
+  --color-system-colors-red-200: #ffbec2;
+  --color-system-colors-red-100: #ffeff0;
+  --color-system-colors-orange-400: #d5691b;
+  --color-system-colors-orange-300: #ff9e2c;
+  --color-system-colors-orange-200: #ffd19b;
+  --color-system-colors-orange-100: #fff3e4;
+  --color-other-purple-100: rgba(87, 93, 255, 0.5);
+  --color-other-purple-50: rgba(87, 93, 255, 0.2);
+  --color-other-blue-50: rgba(29, 136, 254, 0.2);
+  --color-other-sky-blue-50: rgba(87, 195, 255, 0.2);
+  --color-other-red-50: rgba(255, 90, 101, 0.2);
+  --color-other-gray-50: rgba(174, 185, 225, 0.2);
+  --color-other-green-50: rgba(5, 193, 104, 0.2);
+  --color-other-yellow-50: rgba(255, 176, 22, 0.2);
+  --color-other-overlay-60: rgba(0, 0, 0, 0.6);
+  --color-other-overlay-40: rgba(0, 0, 0, 0.4);
+  --color-illustrations-orange-100: #ffe3d3;
+  --color-illustrations-orange-200: #e8ad8c;
+  --color-illustrations-blue-dark-100: #27266a;
+  --color-illustrations-purple-light: #dbd8ff;
+  --color-system-colors-green-300: #14ca74;
+  --color-light-version-surface-background: #f1f4fa;
+  --color-neutral-colors-300: #e9eaf3;
+  --color-primary-colors-color-1: #1476ff;
+  --color-dark-palette-black-300: #2d2d2d;
+  --color-dark-palette-black: #000;
+  --color-dark-version-brand-secondary: #ff69b4;
+  --color-dark-version-brand-primary: #6254ff;
+  --color-dark-version-brand-accent: #2fe5a7;
+  --color-light-version-type-text-light: #788b9a;
+
+  /* Drop Shadow Start */
+  --drop-shadow-c: 0 4px 4px rgba(0, 0, 0, 0.25);
+  /* Drop Shadow End */
+
+  /* Font Size Start */
+  --text-small: clamp(8px, calc(10 / 1440 * 100vw), 10px);
+  --text-default: clamp(10px, calc(12 / 1440 * 100vw), 10px);
+  --text-large: clamp(14px, calc(16 / 1440 * 100vw), 16px);
+  /* Font Size End */
+
+  /* Font Family Start */
+  --font-monasans: "--font-monasans";
+  --font-dmsans: "--font-dmsans";
+  --font-archivoblack: "--font-archivoblack";
+  --font-bali: "--font-bali";
+  /* Font Family End */
+}
+
+@layer components {
+  .shimmerBackground {
+    @apply bg-blue-900/30 animate-pulse;
+  }
+  .shimmerItem {
+    @apply bg-blue-950 animate-pulse;
+  }
+}
+
+@layer utilities {
+  /* Special */
+  .Special-HeadingsDisplay-1 {
+    @apply text-[clamp(calc(52px*0.6),calc(52/1440*100vw),52px)]/[1.19] font-bali;
+  }
+  .Special-HeadingsDisplay-2 {
+    @apply text-[clamp(calc(38px*0.6),calc(38/1440*100vw),38px)]/[1.26] font-bali;
+  }
+  .Special-HeadingsDisplay-3 {
+    @apply text-[clamp(calc(28px*0.6),calc(28/1440*100vw),10px)]/[1.36] font-bali;
+  }
+  .Special-HeadingsDisplay-4 {
+    @apply text-[clamp(calc(24px*0.6),calc(24/1440*100vw),24px)]/[1.33] font-bali;
+  }
+
+  /* headings */
+  .HeadingsTypography-Size-1 {
+    @apply text-[clamp(calc(28px*0.6),calc(28/1440*100vw),28px)]/[1.57] font-monasans font-medium;
+  }
+  .HeadingsTypography-Size-2 {
+    @apply text-[clamp(calc(24px*0.6),calc(24/1440*100vw),24px)]/[1.33] font-monasans font-medium;
+  }
+  .HeadingsTypography-Size-3 {
+    @apply text-[clamp(calc(22px*0.6),calc(22/1440*100vw),22px)]/[1.27] font-monasans font-medium;
+  }
+  .HeadingsTypography-Size-4 {
+    @apply text-[clamp(calc(16px*0.6),calc(16/1440*100vw),16px)]/[1.38] font-monasans;
+  }
+  .HeadingsTypography-Size-5 {
+    @apply text-[clamp(calc(14px*0.6),calc(14/1440*100vw),14px)]/[1.43] font-monasans font-medium;
+  }
+  .HeadingsTypography-Size-6 {
+    @apply text-[clamp(calc(12px*0.6),calc(12/1440*100vw),12px)]/[1.5] font-monasans font-medium;
+  }
+
+  /* Text single */
+  .Text-Single50Regular {
+    @apply text-[clamp(calc(10px*0.6),calc(10/1440*100vw),10px)] font-monasans;
+  }
+  .Text-Single50Medium {
+    @apply text-[clamp(calc(10px*0.6),calc(10/1440*100vw),10px)] font-monasans font-medium;
+  }
+  .Text-Single50Bold {
+    @apply text-[clamp(calc(10px*0.6),calc(10/1440*100vw),10px)] font-bali;
+  }
+
+  .Text-Single100Regular {
+    @apply text-[clamp(calc(12px*0.6),calc(12/1440*100vw),12px)]/[1.17] font-monasans;
+  }
+  .Text-Single100Medium {
+    @apply text-[clamp(calc(12px*0.6),calc(12/1440*100vw),12px)]/[1.17] font-monasans font-medium;
+  }
+  .Text-Single100Bold {
+    @apply text-[clamp(calc(12px*0.6),calc(12/1440*100vw),12px)]/[1.17] font-bali;
+  }
+
+  .Text-Single200Regular {
+    @apply text-[clamp(calc(14px*0.6),calc(14/1440*100vw),14px)]/[1.14] font-monasans;
+  }
+  .Text-Single200Medium {
+    @apply text-[clamp(calc(14px*0.6),calc(14/1440*100vw),14px)] font-monasans font-medium;
+  }
+  .Text-Single200Bold {
+    @apply text-[clamp(calc(14px*0.6),calc(14/1440*100vw),14px)]/[1.14] font-bali;
+  }
+
+  .Text-Single300Regular {
+    @apply text-[clamp(calc(16px*0.6),calc(16/1440*100vw),16px)]/[1.13] font-monasans;
+  }
+  .Text-Single300Medium {
+    @apply text-[clamp(calc(16px*0.6),calc(16/1440*100vw),16px)]/[1.13] font-monasans font-medium;
+  }
+  .Text-Single300Bold {
+    @apply text-[clamp(calc(16px*0.6),calc(16/1440*100vw),16px)]/[1.13] font-bali;
+  }
+
+  .Text-Single400Regular {
+    @apply text-[clamp(calc(20px*0.6),calc(20/1440*100vw),20px)]/[1.1] font-monasans;
+  }
+  .Text-Single400Medium {
+    @apply text-[clamp(calc(20px*0.6),calc(20/1440*100vw),20px)]/[1.1] font-monasans font-medium;
+  }
+  .Text-Single400Bold {
+    @apply text-[clamp(calc(20px*0.6),calc(20/1440*100vw),20px)]/[1.1] font-archivoblack;
+  }
+
+  .Text-Single-Uppercase400Regular {
+    @apply text-[clamp(calc(20px*0.6),calc(20/1440*100vw),20px)]/[1.1] font-monasans leading-[1.2px];
+  }
+  .Text-Single-Uppercase400Medium {
+    @apply text-[clamp(calc(20px*0.6),calc(20/1440*100vw),20px)]/[1.1] font-monasans font-medium leading-[1.2px];
+  }
+  .Text-Single-Uppercase400Bold {
+    @apply text-[clamp(calc(20px*0.6),calc(20/1440*100vw),20px)]/[1.1] font-bali leading-[1.2px];
+  }
+
+  .Text-Single-Uppercase300Regular {
+    @apply text-[clamp(calc(16px*0.6),calc(16/1440*100vw),16px)]/[1.13] font-monasans leading-[0.96px];
+  }
+  .Text-Single-Uppercase300Medium {
+    @apply text-[clamp(calc(16px*0.6),calc(16/1440*100vw),16px)]/[1.13] font-monasans font-medium leading-[0.96px];
+  }
+  .Text-Single-Uppercase300Bold {
+    @apply text-[clamp(calc(16px*0.6),calc(16/1440*100vw),16px)]/[1.13] font-monasans leading-[0.96px];
+  }
+
+  .Text-Single-Uppercase200Regular {
+    @apply text-[clamp(calc(14px*0.6),calc(14/1440*100vw),14px)]/[1.14] font-monasans leading-[0.64px];
+  }
+  .Text-Single-Uppercase200Medium {
+    @apply text-[clamp(calc(14px*0.6),calc(14/1440*100vw),14px)]/[1.14] font-monasans font-medium leading-[0.64px];
+  }
+  .Text-Single-Uppercase200Bold {
+    @apply text-[clamp(calc(14px*0.6),calc(14/1440*100vw),14px)]/[1.14] font-bali leading-[0.64px];
+  }
+
+  .Text-Single-Uppercase100Regular {
+    @apply text-[clamp(calc(12px*0.6),calc(12/1440*100vw),12px)]/[1.17] font-monasans leading-[0.72px];
+  }
+  .Text-Single-Uppercase100Medium {
+    @apply text-[clamp(calc(12px*0.6),calc(12/1440*100vw),12px)]/[1.17] font-monasans font-medium leading-[0.72px];
+  }
+  .Text-Single-Uppercase100Bold {
+    @apply text-[clamp(calc(12px*0.6),calc(12/1440*100vw),12px)]/[1.17] font-bali leading-[0.72px];
+  }
+
+  .ParagraphDefault {
+    @apply text-[clamp(calc(12px*0.6),calc(12/1440*100vw),12px)]/[1.5] font-monasans font-medium;
+  }
+  .ParagraphSmall {
+    @apply text-[clamp(calc(10px*0.6),calc(10/1440*100vw),10px)]/[1.4] font-monasans font-medium;
+  }
+  .ParagraphLarge {
+    @apply text-[clamp(calc(16px*0.6),calc(16/1440*100vw),16px)]/[1.5] font-monasans;
+  }
+
+  .Rich-TextLink-Text {
+    @apply text-[clamp(calc(16px*0.6),calc(16/1440*100vw),16px)]/[1.25] font-monasans font-medium;
+  }
+  .Rich-TextBold {
+    @apply text-[clamp(calc(12px*0.6),calc(12/1440*100vw),12px)]/[1.17] font-bali;
+  }
+  .BodySmall {
+    @apply text-[clamp(calc(12px*0.6),calc(12/1440*100vw),12px)] font-dmsans;
+  }
+  .BodyMedium {
+    @apply text-[clamp(calc(14px*0.6),calc(14/1440*100vw),14px)] font-dmsans;
+  }
+
+  .HeadlineMedium {
+    @apply text-[clamp(calc(24px*0.6),calc(24/1440*100vw),24px)] font-dmsans font-bold;
+  }
+
+  .TitleSmall {
+    @apply text-[clamp(calc(16px*0.6),calc(16/1440*100vw),16px)] font-dmsans font-medium;
+  }
+}
+
+.maplibregl-ctrl-bottom-right {
+  @apply hidden;
+}
+
+.maplibregl-popup {
+  .maplibregl-popup-tip {
+    @apply bg-blue-800;
+  }
+  .maplibregl-popup-content {
+    @apply bg-blue-800 p-4 rounded-lg shadow-md text-white;
+    div {
+      p {
+        @apply text-lg font-semibold text-center text-white pb-3;
+      }
+      div {
+        @apply grid grid-cols-2;
+        div {
+          @apply text-[clamp(calc(14px*0.8),calc(14/1440*100vw),16px)]/[1.5] 
+          font-monasans font-medium;
+        }
+      }
+    }
+  }
+}

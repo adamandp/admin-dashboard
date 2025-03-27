@@ -1,0 +1,16 @@
+{
+  "data": [
+    {
+      "name": "Sell",
+      "value": 60
+    },
+    {
+      "name": "Distribute",
+      "value": 15
+    },
+    {
+      "name": "Return",
+      "value": 5
+    }
+  ]
+}

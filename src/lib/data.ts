@@ -15,7 +15,6 @@ import {
   RevenueByCustomerResponse,
   SalesTrendResponse,
   TeamProgressResponse,
-  WebsiteVisitors,
   WebsiteVisitorsResponse,
 } from "./definitions/analytics";
 import { ProductResponse } from "./definitions/products";

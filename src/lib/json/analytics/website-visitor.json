@@ -1,11 +1,9 @@
 {
-  "totalVisitors": 150000,
   "label": "Website Visitors",
+  "totalVisitors": 150000,
   "data": [
-    { "id": 1, "label": "chrome", "visitors": 30 },
-    { "id": 2, "label": "safari", "visitors": 50 },
-    { "id": 3, "label": "firefox", "visitors": 20 },
-    { "id": 4, "browser": "edge", "visitors": 173 },
-    { "id": 5, "browser": "other", "visitors": 90 }
+    { "id": 1, "label": "organic", "visitors": 30 },
+    { "id": 2, "label": "social", "visitors": 50 },
+    { "id": 3, "label": "direct", "visitors": 20 }
   ]
 }

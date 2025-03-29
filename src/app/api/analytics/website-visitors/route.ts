@@ -1,4 +1,4 @@
-import data from "@/lib/json/analytics/sales-trend.json";
+import data from "@/lib/json/analytics/website-visitor.json";
 
 export async function GET() {
   return new Response(JSON.stringify(data), {

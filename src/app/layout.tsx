@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
-import { archivoblack, bali, dmsans, monasans } from "@/lib/font";
-import "@/styles/globals.css";
-import "@/styles/shadcn.css";
-import "@/styles/basic.css";
+import { archivoblack, bali, dmsans, monasans, worksasns } from "@/lib/font";
 import QueryProvider from "@/utils/queryProvider";
-import { ThemeProvider } from "@/components/theme-provider";
+import { ThemeProvider } from "@/components/ui/layout/theme-provider";
+import "../styles/global.css";
+import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+import { AppSidebar } from "@/components/ui/layout/sidebar/sidebar";
+import { SiteHeader } from "@/components/ui/layout/header";
+import { ReactNode } from "react";
+import { SiteMain } from "@/components/ui/layout/main";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,12 +17,12 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${monasans.variable} ${dmsans.variable} ${archivoblack.variable} ${bali.variable} bg-[#081028] antialiased`}
+        className={`${monasans.variable} ${dmsans.variable} ${archivoblack.variable} ${bali.variable} ${worksasns.variable} antialiased`}
       >
         <QueryProvider>
           <ThemeProvider
@@ -28,9 +31,13 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <main className="max-w-[1440px] mx-auto">
-              <div className="px-c-11 py-c-9">{children}</div>
-            </main>
+            <SidebarProvider className="flex justify-center">
+              <AppSidebar />
+              <SidebarInset>
+                <SiteHeader />
+                <SiteMain>{children}</SiteMain>
+              </SidebarInset>
+            </SidebarProvider>
           </ThemeProvider>
         </QueryProvider>
       </body>

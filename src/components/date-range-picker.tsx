@@ -1,30 +1,27 @@
 import { format } from "date-fns";
 import { CalendarIcon } from "lucide-react";
-import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
-import { Calendar } from "@/components/ui/calendar";
+import { cn } from "@/lib/shadcn/utils";
+import { Button } from "@/components/ui/shadcn/button";
+import { Calendar } from "@/components/ui/shadcn/calendar";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover";
-import { DateRangePickerProps } from "@/lib/interfaces";
+} from "@/components/ui/shadcn/popover";
+import { DateRangePickerProps } from "@/lib/definitions/definition";
 
-export function DatePickerWithRange(dates: DateRangePickerProps) {
-  const { date, setDate } = dates;
+export function DatePickerWithRange({ date, setDate }: DateRangePickerProps) {
   return (
     <div className={cn("grid gap-2")}>
       <Popover>
         <PopoverTrigger asChild>
           <Button
             id="date"
-            variant={"outline"}
-            className={cn(
-              "Text-Single50Medium gap-c-1 !p-c-2.5 h-fit !rounded-c-1 border-0 !bg-neutral-colors-700",
-              !date && "text-muted-foreground"
-            )}
+            variant={"default"}
+            size={"custom"}
+            className={cn(!date && "text-muted-foreground")}
           >
-            <CalendarIcon className="mr-2" />
+            <CalendarIcon />
             {date?.from ? (
               date.to ? (
                 <>
@@ -39,8 +36,7 @@ export function DatePickerWithRange(dates: DateRangePickerProps) {
             )}
           </Button>
         </PopoverTrigger>
-        <PopoverContent className="w-auto p-0 scale-80" align="end">
-          {" "}
+        <PopoverContent className="w-auto p-0 scale-70" align="end">
           <Calendar
             initialFocus
             mode="range"

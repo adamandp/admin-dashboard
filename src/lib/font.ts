@@ -3,10 +3,11 @@ import {
   DM_Sans,
   Mona_Sans,
   Noto_Sans_Balinese,
+  Work_Sans,
 } from "next/font/google";
 
 export const monasans = Mona_Sans({
-  subsets: ["vietnamese"],
+  subsets: ["latin"],
   weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
   variable: "--font-monasans",
 });
@@ -35,7 +36,13 @@ export const archivoblack = Archivo_Black({
 });
 
 export const bali = Noto_Sans_Balinese({
-  subsets: ["balinese", "latin"],
+  subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-bali",
+});
+
+export const worksasns = Work_Sans({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-worksans",
 });

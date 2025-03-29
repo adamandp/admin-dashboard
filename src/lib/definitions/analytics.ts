@@ -19,7 +19,7 @@ export interface OrderStatus {
   client: Client;
   date: string;
   status: "Completed" | "Failed" | "Pending";
-  country: string;
+  city: string;
   total: number;
 }
 
@@ -60,14 +60,14 @@ export interface TeamProgressResponse {
   data: TeamMember[];
 }
 
-export interface Source {
+export interface WebsiteVisitors {
   id: number;
   label: string;
   visitors: number;
 }
 
 export interface WebsiteVisitorsResponse {
-  totalVisitors: number;
   label: string;
-  data: Source[];
+  totalVisitors: number;
+  data: WebsiteVisitors[];
 }

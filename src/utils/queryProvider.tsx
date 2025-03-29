@@ -9,11 +9,11 @@ export default function QueryProvider({
   children: React.ReactNode;
 }) {
   const [queryClient] = useState(() => new QueryClient({
-    defaultOptions: {
-      queries: {
-        refetchOnWindowFocus: false
-      }
-    }
+    // defaultOptions: {
+    //   queries: {
+    //     refetchOnWindowFocus: false
+    //   }
+    // }
   }));
 
   return (

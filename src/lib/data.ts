@@ -22,10 +22,9 @@ import { AllUserResponse, UserStatResponse } from "./definitions/users";
 
 // Dashboard
 
-const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+// const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 export const fetchDashboardStat = async (): Promise<DashboardStatResponse> => {
-  await delay(5000);
   return (
     await axiosInstance.get<DashboardStatResponse>("/dashboard/dashboard-stats")
   ).data;

@@ -186,7 +186,7 @@
     @apply text-[clamp(calc(28px*0.6),calc(28/1440*100vw),10px)]/[1.36] font-bali;
   }
   .Special-HeadingsDisplay-4 {
-    @apply text-[clamp(calc(24px*0.6),calc(24/1440*100vw),24px)]/[1.33] font-bali;
+    @apply text-[clamp(calc(24px*0.6),calc(24/1440*100vw),24px)]/[1.33] font-bali font-medium;
   }
 
   /* headings */
@@ -224,7 +224,7 @@
     @apply text-[clamp(calc(12px*0.6),calc(12/1440*100vw),12px)]/[1.17] font-monasans;
   }
   .Text-Single100Medium {
-    @apply text-[clamp(calc(12px*0.6),calc(12/1440*100vw),12px)]/[1.17] font-monasans font-medium;
+    @apply text-[clamp(calc(16px*0.6),calc(16/1440*100vw),16px)]/[1.17] font-monasans font-semibold;
   }
   .Text-Single100Bold {
     @apply text-[clamp(calc(12px*0.6),calc(12/1440*100vw),12px)]/[1.17] font-bali;
@@ -234,7 +234,7 @@
     @apply text-[clamp(calc(14px*0.6),calc(14/1440*100vw),14px)]/[1.14] font-monasans;
   }
   .Text-Single200Medium {
-    @apply text-[clamp(calc(14px*0.6),calc(14/1440*100vw),14px)] font-monasans font-medium;
+    @apply text-[clamp(calc(18px*0.6),calc(18/1440*100vw),18px)] font-monasans font-semibold;
   }
   .Text-Single200Bold {
     @apply text-[clamp(calc(14px*0.6),calc(14/1440*100vw),14px)]/[1.14] font-bali;

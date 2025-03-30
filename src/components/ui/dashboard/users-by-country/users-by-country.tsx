@@ -17,7 +17,7 @@ export const UsersByCountry = () => {
   return (
     <Card size="lg">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-c-10 lg:gap-c-4">
-        <section className="flex flex-col gap-c-2.5 lg:col-span-1 order-2 lg:order-1">
+        <section className="flex flex-col gap-c-2.5 lg:col-span-1">
           <Title title={category} size="lg" />
           <div className="flex items-center gap-c-1.5 mb-c-1">
             <Value value={totalUsers || 0} />
@@ -25,7 +25,7 @@ export const UsersByCountry = () => {
           </div>
           <UsersByCountryChart data={data || []} />
         </section>
-        <section className="h-c-80 lg:h-full lg:col-span-2 order-1 lg:order-2">
+        <section className="h-c-80 lg:h-full lg:col-span-2">
           <UsersByCountryMap data={data || []} />
         </section>
       </div>

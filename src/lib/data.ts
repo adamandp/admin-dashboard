@@ -22,27 +22,30 @@ import { AllUserResponse, UserStatResponse } from "./definitions/users";
 
 // Dashboard
 
+const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+
 export const fetchDashboardStat = async (): Promise<DashboardStatResponse> => {
+  await delay(5000);
   return (
-    await axiosInstance.get<DashboardStatResponse>("dashboard/dashboard-stats")
+    await axiosInstance.get<DashboardStatResponse>("/dashboard/dashboard-stats")
   ).data;
 };
 
 export const fetchTotalProfit = async (): Promise<TotalProfitResponse> => {
   return (
-    await axiosInstance.get<TotalProfitResponse>("dashboard/total-profit")
+    await axiosInstance.get<TotalProfitResponse>("/dashboard/total-profit")
   ).data;
 };
 
 export const fetchTotalRevenue = async (): Promise<TotalRevenueResponse> => {
   return (
-    await axiosInstance.get<TotalRevenueResponse>("dashboard/total-revenue")
+    await axiosInstance.get<TotalRevenueResponse>("/dashboard/total-revenue")
   ).data;
 };
 
 export const fetchTotalSessions = async (): Promise<TotalSessionsResponse> => {
   return (
-    await axiosInstance.get<TotalSessionsResponse>("dashboard/total-sessions")
+    await axiosInstance.get<TotalSessionsResponse>("/dashboard/total-sessions")
   ).data;
 };
 
@@ -57,13 +60,13 @@ export const fetchUsersByCountry =
 
 export const fetchRecentOrder = async (): Promise<RecentOrder[]> => {
   return (
-    await axiosInstance.get<RecentOrderResponse>("dashboard/recent-order")
+    await axiosInstance.get<RecentOrderResponse>("/dashboard/recent-order")
   ).data.data;
 };
 
 export const fetchUsersByDevice = async (): Promise<UsersByDeviceResponse> => {
   return (
-    await axiosInstance.get<UsersByDeviceResponse>("dashboard/users-by-device")
+    await axiosInstance.get<UsersByDeviceResponse>("/dashboard/users-by-device")
   ).data;
 };
 
@@ -71,13 +74,13 @@ export const fetchUsersByDevice = async (): Promise<UsersByDeviceResponse> => {
 
 export const fetchAnalyticsStat = async (): Promise<AnalyticsStatResponse> => {
   return (
-    await axiosInstance.get<AnalyticsStatResponse>("analytics/analytics-stat")
+    await axiosInstance.get<AnalyticsStatResponse>("/analytics/analytics-stat")
   ).data;
 };
 
 export const fetchOrderStatus = async (): Promise<OrderStatusResponse> => {
   return (
-    await axiosInstance.get<OrderStatusResponse>("analytics/order-status")
+    await axiosInstance.get<OrderStatusResponse>("/analytics/order-status")
   ).data;
 };
 
@@ -85,19 +88,19 @@ export const fetchRevenueByCustomer =
   async (): Promise<RevenueByCustomerResponse> => {
     return (
       await axiosInstance.get<RevenueByCustomerResponse>(
-        "analytics/revenue-by-customer"
+        "/analytics/revenue-by-customer"
       )
     ).data;
   };
 
 export const fetchSalesTrend = async (): Promise<SalesTrendResponse> => {
-  return (await axiosInstance.get<SalesTrendResponse>("analytics/sales-trend"))
+  return (await axiosInstance.get<SalesTrendResponse>("/analytics/sales-trend"))
     .data;
 };
 
 export const fetchTeamProgress = async (): Promise<TeamProgressResponse> => {
   return (
-    await axiosInstance.get<TeamProgressResponse>("analytics/team-progress")
+    await axiosInstance.get<TeamProgressResponse>("/analytics/team-progress")
   ).data;
 };
 
@@ -105,7 +108,7 @@ export const fetchWebsiteVisitors =
   async (): Promise<WebsiteVisitorsResponse> => {
     return (
       await axiosInstance.get<WebsiteVisitorsResponse>(
-        "analytics/website-visitors"
+        "/analytics/website-visitors"
       )
     ).data;
   };
@@ -113,16 +116,17 @@ export const fetchWebsiteVisitors =
 //  Products
 
 export const fetchProducts = async (): Promise<ProductResponse> => {
-  return (await axiosInstance.get<ProductResponse>("products")).data;
+  return (await axiosInstance.get<ProductResponse>("/products")).data;
 };
 
 //  Users
 
 export const fetchAllUsers = async (): Promise<AllUserResponse> => {
-  return (await axiosInstance.get<AllUserResponse>("all-users")).data;
+  return (await axiosInstance.get<AllUserResponse>("/all-users")).data;
 };
 
 export const fetchUsersStat = async (): Promise<UserStatResponse> => {
-  return (await axiosInstance.get<UserStatResponse>("dashboard/dashboard-stat"))
-    .data;
+  return (
+    await axiosInstance.get<UserStatResponse>("/dashboard/dashboard-stat")
+  ).data;
 };

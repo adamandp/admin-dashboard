@@ -23,36 +23,36 @@
 //   </main>
 // );
 
-// export default function Page() {
-//   return (
-//     <main>
-//       <div className="grid gap-c-7">
-//         <Header title="Analytics" />
-//         <div className="grid gap-c-4">
-//           <Suspense fallback={<div>Loading...</div>}>
-//             <AnalyticsStat />
-//           </Suspense>
-//           <div className="grid grid-cols-1 lg:grid-cols-3 gap-c-4">
-//             <Suspense fallback={<div>Loading...</div>}>
-//               <WebsiteVisitors className="" />
-//             </Suspense>
-//             <Suspense fallback={<div>Loading...</div>}>
-//               <RevenueByCustomer className="col-span-2" />
-//             </Suspense>
-//           </div>
-//           <div className="grid grid-cols-1 lg:grid-cols-2 gap-c-4">
-//             <Suspense fallback={<div>Loading...</div>}>
-//               <TeamProgress />
-//             </Suspense>
-//             <Suspense fallback={<div>Loading...</div>}>
-//               <SalesTrend />
-//             </Suspense>
-//           </div>
-//           <Suspense fallback={<div>Loading...</div>}>
-//             <OrderStatus />
-//           </Suspense>
-//         </div>
-//       </div>
-//     </main>
-//   );
-// }
+export default function Page() {
+  return (
+    <main>
+      <div className="grid gap-c-7">
+        {/* <Header title="Analytics" />
+        <div className="grid gap-c-4">
+          <Suspense fallback={<div>Loading...</div>}>
+            <AnalyticsStat />
+          </Suspense>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-c-4">
+            <Suspense fallback={<div>Loading...</div>}>
+              <WebsiteVisitors className="" />
+            </Suspense>
+            <Suspense fallback={<div>Loading...</div>}>
+              <RevenueByCustomer className="col-span-2" />
+            </Suspense>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-c-4">
+            <Suspense fallback={<div>Loading...</div>}>
+              <TeamProgress />
+            </Suspense>
+            <Suspense fallback={<div>Loading...</div>}>
+              <SalesTrend />
+            </Suspense>
+          </div>
+          <Suspense fallback={<div>Loading...</div>}>
+            <OrderStatus />
+          </Suspense>
+        </div> */}
+      </div>
+    </main>
+  );
+}

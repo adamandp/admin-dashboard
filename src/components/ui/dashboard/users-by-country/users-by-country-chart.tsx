@@ -26,8 +26,8 @@ export function UsersByCountryChart({ data }: { data: CountryData[] }) {
   return (
     <ScrollArea className="max-h-c-96">
       <div className="aspect-[4.5/12] lg:aspect-[4.5/9] pr-2">
-        <ChartContainer config={{}} className="w-full h-full">
-          <BarChart data={chartData} layout="vertical">
+        <ChartContainer config={{}} className="size-full">
+          <BarChart data={chartData} layout="vertical" height={20}>
             <CartesianGrid horizontal={false} />
             <YAxis
               dataKey="users"
